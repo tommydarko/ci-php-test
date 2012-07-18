@@ -1,5 +1,6 @@
 <?php
 	require_once '../lib/World.php';
+	require_once '../lib/Util.php';
 	
 	$world = new World();
 ?>
