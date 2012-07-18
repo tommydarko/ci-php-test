@@ -7,12 +7,11 @@ class World extends Hello {
 		return parent::getMessage() . ", World";
 	}
 	
-	public function isEvenNumber($num) {
+	public function isEven($num) {
 		if ($num & 1) {
 			return true;
 		} else {
 			return false; 
 		}
-		
 	}
 }
