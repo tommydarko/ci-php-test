@@ -121,4 +121,12 @@
    <arg path="${basedir}/build/code-browser" />
   </exec>
  </target>
+ <target name="requirejs-minimise" description="Compile RequireJS modules into single file and Uglify">
+     <exec executable="r.js" dir="${basedir}/htdocs/scripts/">
+         <arg value="-o" />
+         <arg value="baseUrl=." />
+         <arg value="name=main" />
+         <arg value="out=main-built.js" />
+    </exec>
+ </target>
 </project>
