@@ -11,12 +11,16 @@ class World extends Hello {
 		if (! is_int($num)) {
 			throw new Exception("Please provide an Int", 1);
 		}
-		if ($num & 1) {
-			print "Is an even number";
-			return true;
+		if ($num > 0) {
+			if ($num & 1) {
+				print "Is an even number";
+				return true;
+			} else {
+				print "Is an odd number";
+				return false; 
+			}
 		} else {
-			print "Is an odd number";
-			return false; 
+			throw new Exception("Must be greater than 0", 1);
 		}
 	}
 }
