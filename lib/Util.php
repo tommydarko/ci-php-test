@@ -2,7 +2,7 @@
 
 class Util {
 	public function isEven($num) {
-		if($num & 1) {
+		if ($num & 1) {
 			return true;
 		} else {
 			return false; 
