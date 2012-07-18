@@ -2,6 +2,9 @@
 
 class Util {
 	public function isEven($num) {
+		if (! is_int($num)) {
+			throw new Exception("Please provide an Int", 1);
+		}
 		if ($num & 1) {
 			print "Is an even number";
 			return true;
@@ -12,6 +15,9 @@ class Util {
 	}
 	
 	public function isEvenAgain($num) {
+		if (! is_int($num)) {
+			throw new Exception("Please provide an Int", 1);
+		}
 		if ($num & 1) {
 			print "Is an even number";
 			return true;
