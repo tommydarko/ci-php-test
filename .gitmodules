@@ -1,0 +1,6 @@
+[submodule "vendor/submodule-test-01"]
+	path = vendor/submodule-test-01
+	url = https://github.com/tommydarko/submodule-test-01.git
+[submodule "vendor/submodule-test-02"]
+	path = vendor/submodule-test-02
+	url = https://github.com/tommydarko/submodule-test-02.git
